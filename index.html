@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collatz Sequence finder</title>
+  </head>
+  <body>
+    <h1>Collatz Sequence Generator</h1>
+    <h4>This is a tool that generates a Collatz sequence list from a given number using the Collatz Conjecture, commonly known as the 3x+1 problem. The conjecture proposes a simple set of rules that are repeatedly applied to a number: if the number is even, divide it by two. If the number is odd, multiply it by 3 and add 1. These rules are applied repeately to the number until the sequence converges to 1. The Collatz Conjecture asserts that any positive integer that this sequence is applied to will eventually converge to 1.</h4>
+    <br>
+    <input placeholder="Input a number" id="inputBox" type="text"/>
+    <button type="button" onclick="collatz()">Submit</button>
+    <h5 id="holder">The result will appear here.</h5>
+    <br>
+    <h4>The output of this generator is a list formatted for graphing. You can graph it <a href="https://www.desmos.com/calculator/c2bwymquun">here</a>.</h4>
+    <br>
+    <h5>&copy Nolan Stone 2024</h5>
+    <script src="index.js"></script>
+  </body>
+</html>
