@@ -32,7 +32,7 @@ function collatz() {
     }
     holder.innerHTML += "] <br> b = [0..." + i + "]";
 
-    const chart = new Chart(ctx, {
+    new Chart(ctx, {
       type: 'line',
       data: {
         labels: steps,
