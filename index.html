@@ -8,16 +8,17 @@
   </head>
   <body>
     <h1>Collatz Sequence Generator</h1>
-    <h4>This is a tool that generates a Collatz sequence list from a given number using the Collatz Conjecture, commonly known as the 3x+1 problem. The conjecture proposes a simple set of rules that are repeatedly applied to a number: if the number is even, divide it by two. If the number is odd, multiply it by 3 and add 1. These rules are applied repeately to the number until the sequence converges to 1. The Collatz Conjecture asserts that any positive integer that this sequence is applied to will eventually converge to 1.</h4>
+    <h4>This is a tool that generates a Collatz sequence list and a chart of this list from a given number using the Collatz Conjecture, commonly known as the 3x+1 problem. The conjecture proposes a simple set of rules that are repeatedly applied to a number: if the number is even, divide it by two. If the number is odd, multiply it by 3 and add 1. These rules are applied repeately to the number until the sequence converges to 1. The Collatz Conjecture asserts that any positive integer that this sequence is applied to will eventually converge to 1.</h4>
     <br>
     <input placeholder="Input a number" id="inputBox" type="text"/>
     <button type="button" onclick="collatz()">Submit</button>
-    <h5 id="holder">The result will appear here.</h5>
+    <h5 id="holder">The list will appear here and the chart will appear below.</h5>
     <br>
     <div>
       <canvas id="ctx"></canvas>
     </div>
     <h4>The output of this generator is a list formatted for graphing. You can graph it <a href="https://www.desmos.com/calculator/yh4zp2xfm3">here</a>.</h4>
+    <h4>I recommend using the link above to graph the sequence if you'd like to explore it further (zoom in, interpolate values, etc)</h4>
     <br>
     <h5>&copy Nolan Stone 2024</h5>
     <script src="index.js"></script>

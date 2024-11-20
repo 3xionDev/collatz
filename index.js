@@ -2,6 +2,10 @@ const holder = document.getElementById('holder');
 const ctx = document.getElementById('ctx');
 
 function collatz() {
+  let chartStatus = Chart.getChart("ctx"); // <canvas> id
+  if (chartStatus != undefined) {
+    chartStatus.destroy();
+  }
   let value = document.getElementById('inputBox').value;
   let steps = [];
   let a = [];
@@ -31,12 +35,12 @@ function collatz() {
     }
     holder.innerHTML += "] <br> b = [0..." + i + "]";
 
-    new Chart(ctx, {
+    const chart = new Chart(ctx, {
       type: 'line',
       data: {
         labels: steps,
         datasets: [{
-          label: 'Sequence Integers',
+          label: 'Sequence Integer',
           data: a,
           borderWidth: 1
         }]
