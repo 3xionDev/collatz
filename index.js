@@ -2,7 +2,6 @@ const holder = document.getElementById('holder');
 const ctx = document.getElementById('ctx');
 
 function collatz() {
-  chart.destroy();
   let value = document.getElementById('inputBox').value;
   let steps = [];
   let a = [];
